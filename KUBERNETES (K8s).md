@@ -32,9 +32,8 @@
 
 <h4>MONOLITHIC vs MICROSERVICES</h4>
 
-<img src="MONOLITHIC.png" alt="Monolithic arc" width="380 px" align="top">
-<img src="MICROSERVICES.png" alt="Monolithic arc" width="380 px" align="right">
-
+<img src="Resources/MONOLITHIC.png" alt="Monolithic arc" width="380 px" align="top">
+<img src="Resources/MICROSERVICES.png" alt="Monolithic arc" width="380 px" align="right">
 <ul>
     <li>ARCHITECTURE : Monolithic architecture all components are tightly covered, all the communication are internally systems.<br>
     Microservices architecture all components are seperate, and the communication happens via external interfaces, these are seperate APIs that are communicate over network.</li>
@@ -220,3 +219,15 @@ Each configuration file has three parts :
           targetPort: 8080
     </code>
 </pre>
+<h4>CONTAINER PROBES</h4>
+<p>Container Probes helps Kubernetes to handle traffics.</p>
+
+
+<p>READINESS PROBE : Mostly used to check dependencies of the pod, if the pod is ready. If the pod is not ready then the service do not send traffic in the particular pod, unless the pod becomes in ready state.</p>
+<p>LIVENESS PROBE : It just check wheather the pod is live or not. If not then it restarts the pod.</p>
+<p>STARTUP PROBE : It halts the execution of other probes and first the startup probe is executed and unless and until it completes then the liveness probe continue its execution.</p>
+<ul>
+    <li>HTTP : It just checks the HTTP get response if OK or in between 200 to 399 range.</li>
+    <li>TCP : Port check</li>
+    <li>COMMAND : It is a custom command, if you want to run and have a custom result, if its '0' is succeedes and if it is not then it's a failure.</li>
+</ul>
