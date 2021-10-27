@@ -32,8 +32,9 @@
 
 <h4>MONOLITHIC vs MICROSERVICES</h4>
 
-<img src="Resources/MONOLITHIC.png" alt="Monolithic arc" width="380 px" align="top">
-<img src="Resources/MICROSERVICES.png" alt="Monolithic arc" width="380 px" align="right">
+<img src="Resources/MONOLITHIC.png" alt="Monolithic arc" width="380 px" align="left">
+<img src="Resources/MICROSERVICES.png" alt="Monolithic arc" width="380 px" align="top">
+
 <ul>
     <li>ARCHITECTURE : Monolithic architecture all components are tightly covered, all the communication are internally systems.<br>
     Microservices architecture all components are seperate, and the communication happens via external interfaces, these are seperate APIs that are communicate over network.</li>
