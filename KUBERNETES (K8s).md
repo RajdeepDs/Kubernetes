@@ -238,7 +238,7 @@ Each configuration file has three parts :
 <br/>
 
 <h4>DEAMON STATE</h4>
-<p>It makes a sure that the copy of the pod runs on all or some of the nodes. And whenever a new nodes joins the same copy of the pod print over there and whenever a node is removed from the blaster the pod also get removed.
+<p>It makes a sure that the copy of the pod runs on all or some of the nodes. And whenever a new nodes joins the same copy of the pod print over there and whenever a node is removed from the blaster the pod also get removed.</p>
 
     # To check deamon sets running : 
     
@@ -256,4 +256,5 @@ Each configuration file has three parts :
     # Delete deamon set :
 
     kubectl delete ds [YAML FILE_NAME]
-    
+
+<br/>
