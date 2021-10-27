@@ -231,3 +231,29 @@ Each configuration file has three parts :
     <li>TCP : Port check</li>
     <li>COMMAND : It is a custom command, if you want to run and have a custom result, if its '0' is succeedes and if it is not then it's a failure.</li>
 </ul>
+<br/>
+
+<h4>STATEFUL STATE</h4>
+<p>Headless Service : We give a slusterIp as 'none' and it creates a headless service</p>
+<br/>
+
+<h4>DEAMON STATE</h4>
+<p>It makes a sure that the copy of the pod runs on all or some of the nodes. And whenever a new nodes joins the same copy of the pod print over there and whenever a node is removed from the blaster the pod also get removed.
+
+    # To check deamon sets running : 
+    
+    kubectl get ds -A
+
+    # How to create a deamon set :
+
+    vim ds.yaml
+    kubectl create -f ds.yaml
+
+    # Logs :
+
+    kubectl logs -f [POD_NAME]
+
+    # Delete deamon set :
+
+    kubectl delete ds [YAML FILE_NAME]
+    
