@@ -232,7 +232,6 @@ Each configuration file has three parts :
     <li>TCP : Port check</li>
     <li>COMMAND : It is a custom command, if you want to run and have a custom result, if its '0' is succeedes and if it is not then it's a failure.</li>
 </ul>
-<<<<<<< HEAD
 <br/>
 
 <h4>STATEFUL STATE</h4>
@@ -260,5 +259,3 @@ Each configuration file has three parts :
     kubectl delete ds [YAML FILE_NAME]
 
 <br/>
-=======
->>>>>>> 572ab9c8cf85b197fa9bcf7b3c1a65fc61fe3f6f
