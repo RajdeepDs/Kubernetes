@@ -34,7 +34,8 @@
 
 <img src="Resources/MONOLITHIC.png" alt="Monolithic arc" width="380 px" align="left">
 <img src="Resources/MICROSERVICES.png" alt="Monolithic arc" width="380 px" align="top">
-
+<br>
+<hr>
 <ul>
     <li>ARCHITECTURE : Monolithic architecture all components are tightly covered, all the communication are internally systems.<br>
     Microservices architecture all components are seperate, and the communication happens via external interfaces, these are seperate APIs that are communicate over network.</li>
@@ -52,10 +53,10 @@
 <h4>INTRODUCTIONS TO CONTAINERS</h4>
 <p>A standard container that is loaded with virtually any goods, and stay sealed until it reaches final delivery.<br>
     In between, can be loaded and unloaded, stacked, transported efficiently over long distances, and transferred from one mode of transport to another.</p>
-
+<img src="Resources/Docker.png">
 <p>An engine that enables any payload to be encapsulated as a lightweight, portable, self-sufficient container that can be manipulated using standard operations and run hardware platform.</p>
 <h4>CONTAINERS vs VIRTUAL MACHINES</h4>
-
+<img src="Resources/CONTAINER VS VMS.png">
 <br>
 <h4>Worker machines in K8s clusters (Worker Nodes)</h4>
 3 node processes :
@@ -100,7 +101,7 @@ Open Source Tool : MINIKUBE
 <u>KUBECTL</u>
 <ol style="list-style-type:none;">
 <li>- Command line tool for K8s cluster.</li>
-
+<img src="Resources/KUBECTL.png">
 <li>- Kubectl is not only for Minikube cluster, also for cloud cluster, hyper cluster.</li>
 </ol>
 <h4> BASIC KUBECTL COMMANDS</h4>
@@ -124,6 +125,7 @@ Open Source Tool : MINIKUBE
 
     kubectl delete deployment [PODNAME] : to delete deployment
 
+<img src="Resources/ABSTRACTION.png">
 <br>
 <h4>K8s YAML CONFIGURATION FILE</h4>
 Each configuration file has three parts :
@@ -222,7 +224,7 @@ Each configuration file has three parts :
 </pre>
 <h4>CONTAINER PROBES</h4>
 <p>Container Probes helps Kubernetes to handle traffics.</p>
-
+<img src="Resources/CONTAINER PROBES.png">
 
 <p>READINESS PROBE : Mostly used to check dependencies of the pod, if the pod is ready. If the pod is not ready then the service do not send traffic in the particular pod, unless the pod becomes in ready state.</p>
 <p>LIVENESS PROBE : It just check wheather the pod is live or not. If not then it restarts the pod.</p>
