@@ -53,7 +53,7 @@
 <h4>INTRODUCTIONS TO CONTAINERS</h4>
 <p>A standard container that is loaded with virtually any goods, and stay sealed until it reaches final delivery.<br>
     In between, can be loaded and unloaded, stacked, transported efficiently over long distances, and transferred from one mode of transport to another.</p>
-<img src="Resources/Docker.png">
+<img src="Resources/DOCKER.png">
 <p>An engine that enables any payload to be encapsulated as a lightweight, portable, self-sufficient container that can be manipulated using standard operations and run hardware platform.</p>
 <h4>CONTAINERS vs VIRTUAL MACHINES</h4>
 <img src="Resources/CONTAINER VS VMS.png">
