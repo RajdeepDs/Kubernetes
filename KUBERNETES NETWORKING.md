@@ -1,6 +1,6 @@
 <h2 align="middle">KUBERNETES NETWORKING</h2>
 
-<h4>NETWORKING BASIC</h4>
+<h4>NETWORKING BASICS</h4>
 <img src="Resources/NETWORKING BASIC.png">
 <p>NIC : NETWORK INTERFACE CARD<br>
 Example : ethernet, wireless net<br>
