@@ -54,3 +54,30 @@ There are three different types of Kubernetes Services :
 <li>LoadBalancer</li>
 <li>Headless Service</li>
 </ul>
+
+<h3>CLUSTER IP</h3>
+- Default Service<br>
+- Only accessable within the cluster
+<br>
+<img src="Resources/PORT-FORWARD.png">
+<br>
+<p>We want to connect service to pod, in this case we want to connect through Port:3000, If I Port-Forward to the service, first will be localhost and then 3000 in this case pod runs on ConatinerPort:8080, thats the port my application connect to. The targetPort has to be same as on ContainerPort. So, my localhost will conncet to ServicePort:3000 but the service knows that this is not the port that targeting, then it Port-Forward to ContainerPort:8080.</p>
+<hr>
+If we want to make accessable from the outside, then I will use "Ingress" that also has some different Port Rules. The Ingress which is accessable through people who are unknown such as uses of our web-applications.
+<h3>INGRESS</h3>
+<p>Kubernetes Ingress is a collection of routing rules that govern how external user access services running in a Kubernetes Cluster. However, in real-world Kubernetes Deployment, there are frequently additional consideration beyond routing for ingress.</p>
+<h5>Ingress in Kubernetes:</h5>
+There are three general approaches to exposing application --<br>
+- Using NodePort, which exposes the application on a port across each of nodes.<br>
+- Using LoadBalancer, which creates an external load balancer that points to a Kubernetes service in cluster.<br>
+<h3>NodePort</h3>
+<p>A NodePort is an open port on every node of your cluster. Kubernetes transparently routes incoming traffic on the NodePort to your service, even if your application is running a different node. However, a NodePort is assigned from a pool of cluster-configured NodePort ranges (typically from 30000 - 32767).
+<br>
+<img src="Resources/NODEPORT.png">
+<h4>Headless Service</h4>
+<p>In Headless service, we will not specify any type of Port.</p>
+<p>So summerising,<br>
+Both NodePort and Headless service both allow us to setup moew customize some routing solutions to our service running within our Kubernetes Cluster.</p>
+<h3>LOADBALANCER</h3>
+<p>Using a LoadBalancer service type automatically deploys an external load balancer. This external load balancer is associated with a specific IP Address and routes external traffic to a Kubernetes service in your cluster.</p>
+<img src="Resources/LOADBALANCER.png">
