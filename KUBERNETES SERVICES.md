@@ -1,6 +1,6 @@
 <h2 align="middle">KUBERNETES SERVICES</h2>
 
-<h4>Introduction to Services</h4>
+<h3>Introduction to Services</h3>
 <img src="Resources/SERVICES.png">
 <h4>Let's spinup pod : </h4>
 
