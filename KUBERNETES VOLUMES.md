@@ -20,3 +20,28 @@ The EMPTYDIR can be used such as --
     Volumes:
         -name: test-vol
          EmptyDir: {}
+
+<h3>HOSTPATH</h3>
+<p>A HostPath colume mounts a file or directory from nodes file system into the Pod.</p>
+The HostPath can be used as --
+<ul>
+<li>Running container needs access to the docker internals, so var/lib can be mounted.</li>
+<li>'C' advisor can be run on a container by mounting /zish of a node</li>
+<li>Pod checks wether the directory exits or not and if yes, then only the pod will run</li>
+</ul>
+These both EMPTYDIR & HOSTPATH can be used as saving the data.
+
+    #YAML
+    Containers:
+    -image: alpine
+     name: hostpath-container
+     command: ['sh','-c','sleep 3000']
+     VolumeMounts:
+     -mountPath: /demo
+      name: hp-volume
+    volumes:
+    -name: hp-volume
+     hostPath: 
+        path: /data
+        type: DirectoryOrCreate
+
